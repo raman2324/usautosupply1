@@ -12,6 +12,7 @@ export type Product = {
   bulk?: string;
   stock: "in-stock" | "backorder" | "quote" | "discontinued";
   badge?: "Made in USA" | "Bulk saver" | "VOC-compliant";
+  image?: string;
 };
 
 export function ProductCard({ p }: { p: Product }) {
