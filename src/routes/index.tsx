@@ -189,51 +189,28 @@ function HomePage() {
               View all 7 verticals <ArrowRight className="h-4 w-4" />
             </a>
           </div>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:auto-rows-[260px]">
-            {VERTICALS.map((v, i) => {
-              const featured = i === 0;
-              return (
-                <a
-                  key={v.name}
-                  href="#"
-                  className={`group relative flex overflow-hidden rounded-md border border-line-200 bg-white transition hover:border-us-navy-700 ${
-                    featured ? "lg:col-span-2 lg:row-span-2" : ""
-                  }`}
-                >
-                  {featured ? (
-                    <>
-                      <img src={v.img} alt={v.name} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-asphalt-900/90 via-asphalt-900/40 to-transparent" />
-                      <v.icon className="absolute right-4 top-4 h-6 w-6 text-bone-50" />
-                      <div className="relative mt-auto flex w-full flex-col p-6 text-bone-50">
-                        <h3 className="font-display text-2xl font-bold uppercase leading-tight md:text-3xl">{v.name}</h3>
-                        <p className="mt-2 font-mono text-xs uppercase tracking-wider text-bone-50/80">{v.subs}</p>
-                        <div className="mt-4 flex items-center justify-between border-t border-bone-50/20 pt-3">
-                          <span className="font-mono text-sm">{v.count} products</span>
-                          <ArrowRight className="h-4 w-4 text-us-red-500 transition group-hover:translate-x-1" />
-                        </div>
-                      </div>
-                    </>
-                  ) : (
-                    <div className="flex h-full w-full flex-col">
-                      <div className="relative aspect-[4/3] overflow-hidden bg-paper-100">
-                        <img src={v.img} alt={v.name} loading="lazy" className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-asphalt-900/50 to-transparent" />
-                        <v.icon className="absolute right-4 top-4 h-6 w-6 text-bone-50" />
-                      </div>
-                      <div className="flex flex-1 flex-col p-5">
-                        <h3 className="font-display text-xl font-bold uppercase leading-tight">{v.name}</h3>
-                        <p className="mt-2 font-mono text-xs uppercase tracking-wider text-steel-500">{v.subs}</p>
-                        <div className="mt-auto flex items-center justify-between pt-4">
-                          <span className="font-mono text-sm text-asphalt-900">{v.count} products</span>
-                          <ArrowRight className="h-4 w-4 text-us-red-600 transition group-hover:translate-x-1" />
-                        </div>
-                      </div>
-                    </div>
-                  )}
-                </a>
-              );
-            })}
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {VERTICALS.map((v) => (
+              <a
+                key={v.name}
+                href="#"
+                className="group flex flex-col overflow-hidden rounded-md border border-line-200 bg-white transition hover:border-us-navy-700"
+              >
+                <div className="relative aspect-[4/3] overflow-hidden bg-paper-100">
+                  <img src={v.img} alt={v.name} loading="lazy" className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-asphalt-900/50 to-transparent" />
+                  <v.icon className="absolute right-4 top-4 h-6 w-6 text-bone-50" />
+                </div>
+                <div className="flex flex-1 flex-col p-5">
+                  <h3 className="font-display text-xl font-bold uppercase leading-tight">{v.name}</h3>
+                  <p className="mt-2 font-mono text-xs uppercase tracking-wider text-steel-500">{v.subs}</p>
+                  <div className="mt-auto flex items-center justify-between pt-4">
+                    <span className="font-mono text-sm text-asphalt-900">{v.count} products</span>
+                    <ArrowRight className="h-4 w-4 text-us-red-600 transition group-hover:translate-x-1" />
+                  </div>
+                </div>
+              </a>
+            ))}
           </div>
         </div>
       </section>
