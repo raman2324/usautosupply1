@@ -93,18 +93,18 @@ const NETWORK = [
 ];
 
 const PRODUCTS: Product[] = [
-  { brand: "VERSA-TAGS®", proprietary: true, name: "Heavy-Duty Laminated Key Tags, Pack of 250", sku: "1101254", price: "$48.95", bulk: "10+ from $44.95 · 50+ from $39.95", stock: "in-stock", badge: "Made in USA" },
-  { brand: "CHAMP®", proprietary: true, name: "10K LB Two-Post Asymmetric Lift", sku: "C-FX10K", price: "$3,499.00", msrp: "$4,199.00", save: "Save $700", bulk: "Quote for 2+", stock: "backorder", badge: "Made in USA" },
-  { brand: "SLIP-N-GRIP®", proprietary: true, name: "Premium Floor Mats, Roll of 500", sku: "SNG-500", price: "$129.95", bulk: "5+ from $119.95", stock: "in-stock" },
-  { brand: "UNI-POSCA", name: "PC-5M Medium Tip Paint Markers, Set of 8", sku: "PC5M-8", price: "$22.50", msrp: "$28.99", save: "Save $6.49", stock: "in-stock" },
-  { brand: "THE BIG GLASS™", proprietary: true, name: "Windshield Repair Order Markers, 12-pack", sku: "BG-12RO", price: "$18.75", bulk: "12+ from $16.50", stock: "in-stock" },
-  { brand: "VIKING", name: "VK-200 High-Volume Air Amplifier", sku: "VK-200", price: "$399.99", msrp: "$534.99", save: "Save $135", bulk: "10+ from $379.95", stock: "in-stock", badge: "VOC-compliant" },
-  { brand: "3M", name: "Performance Masking Tape 2380, 18mm — Case", sku: "3M-2380-18", price: "$84.50", bulk: "5+ from $79.95 · 20+ from $74.50", stock: "in-stock" },
-  { brand: "SATA", name: "satajet X 5500 HVLP Spray Gun", sku: "SATA-X5500", price: "$849.00", stock: "in-stock", badge: "Bulk saver" },
-  { brand: "CHAMP®", proprietary: true, name: "Downdraft Paint Booth — Custom Spec", sku: "C-PB-DD", price: "Quote", stock: "quote" },
-  { brand: "SAKURA", name: "Pen-Touch Industrial Markers, 12-pack", sku: "PT-12", price: "$36.50", stock: "in-stock" },
-  { brand: "VIKING", name: "Detail Wand Replacement Kit", sku: "VK-DWR", price: "$24.95", stock: "discontinued" },
-  { brand: "EVERCOAT", name: "Rage Gold Premium Body Filler — Gallon", sku: "EVR-RG-GAL", price: "$58.99", bulk: "4+ from $54.99", stock: "in-stock" },
+  { brand: "VERSA-TAGS®", proprietary: true, name: "Heavy-Duty Laminated Key Tags, Pack of 250", sku: "1101254", price: "$48.95", bulk: "10+ from $44.95 · 50+ from $39.95", stock: "in-stock", badge: "Made in USA", image: imgKeyTags },
+  { brand: "CHAMP®", proprietary: true, name: "10K LB Two-Post Asymmetric Lift", sku: "C-FX10K", price: "$3,499.00", msrp: "$4,199.00", save: "Save $700", bulk: "Quote for 2+", stock: "backorder", badge: "Made in USA", image: imgLift },
+  { brand: "SLIP-N-GRIP®", proprietary: true, name: "Premium Floor Mats, Roll of 500", sku: "SNG-500", price: "$129.95", bulk: "5+ from $119.95", stock: "in-stock", image: imgFloorMats },
+  { brand: "UNI-POSCA", name: "PC-5M Medium Tip Paint Markers, Set of 8", sku: "PC5M-8", price: "$22.50", msrp: "$28.99", save: "Save $6.49", stock: "in-stock", image: imgPaintMarkers },
+  { brand: "THE BIG GLASS™", proprietary: true, name: "Windshield Repair Order Markers, 12-pack", sku: "BG-12RO", price: "$18.75", bulk: "12+ from $16.50", stock: "in-stock", image: imgRoMarkers },
+  { brand: "VIKING", name: "VK-200 High-Volume Air Amplifier", sku: "VK-200", price: "$399.99", msrp: "$534.99", save: "Save $135", bulk: "10+ from $379.95", stock: "in-stock", badge: "VOC-compliant", image: imgAirAmp },
+  { brand: "3M", name: "Performance Masking Tape 2380, 18mm — Case", sku: "3M-2380-18", price: "$84.50", bulk: "5+ from $79.95 · 20+ from $74.50", stock: "in-stock", image: imgMaskingTape },
+  { brand: "SATA", name: "satajet X 5500 HVLP Spray Gun", sku: "SATA-X5500", price: "$849.00", stock: "in-stock", badge: "Bulk saver", image: imgSprayGun },
+  { brand: "CHAMP®", proprietary: true, name: "Downdraft Paint Booth — Custom Spec", sku: "C-PB-DD", price: "Quote", stock: "quote", image: imgPaintBoothProd },
+  { brand: "SAKURA", name: "Pen-Touch Industrial Markers, 12-pack", sku: "PT-12", price: "$36.50", stock: "in-stock", image: imgIndMarkers },
+  { brand: "VIKING", name: "Detail Wand Replacement Kit", sku: "VK-DWR", price: "$24.95", stock: "discontinued", image: imgDetailWand },
+  { brand: "EVERCOAT", name: "Rage Gold Premium Body Filler — Gallon", sku: "EVR-RG-GAL", price: "$58.99", bulk: "4+ from $54.99", stock: "in-stock", image: imgBodyFiller },
 ];
 
 const TASK_FLOWS = [
