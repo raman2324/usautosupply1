@@ -34,10 +34,20 @@ export function ProductCard({ p }: { p: Product }) {
         <button className="absolute right-3 top-3 rounded-md bg-white/90 p-2 text-steel-500 opacity-0 transition group-hover:opacity-100 hover:text-us-red-600">
           <Heart className="h-4 w-4" />
         </button>
-        {/* placeholder product silhouette */}
-        <div className="flex h-full items-center justify-center font-display text-5xl text-line-200">
-          {p.brand.charAt(0)}
-        </div>
+        {p.image ? (
+          <img
+            src={p.image}
+            alt={p.name}
+            loading="lazy"
+            width={512}
+            height={512}
+            className="h-full w-full object-contain p-4 mix-blend-multiply transition duration-500 group-hover:scale-105"
+          />
+        ) : (
+          <div className="flex h-full items-center justify-center font-display text-5xl text-line-200">
+            {p.brand.charAt(0)}
+          </div>
+        )}
       </div>
       <div className="flex flex-1 flex-col p-4">
         <div className="font-mono text-[10px] uppercase tracking-wider text-steel-500">{p.brand}</div>
