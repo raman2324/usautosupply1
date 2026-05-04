@@ -40,6 +40,18 @@ export function Header() {
         <Link to="/" className="shrink-0">
           <Logo />
         </Link>
+        <div className="hidden items-center gap-2 italic text-steel-500 xl:flex">
+          <span className="font-display text-[15px] font-medium tracking-tight">
+            Your solutions start with
+          </span>
+          <svg viewBox="0 0 64 64" className="h-7 w-7" aria-hidden>
+            <circle cx="32" cy="32" r="30" fill="#fff" stroke="#99A2B0" strokeWidth="2" />
+            <path d="M4 32 A28 28 0 0 1 60 32 Z" fill="#C8232C" />
+            <path d="M4 32 A28 28 0 0 0 60 32 Z" fill="#1C3F87" />
+            <text x="32" y="38" textAnchor="middle" fontFamily="Oswald, sans-serif" fontWeight="700" fontStyle="italic" fontSize="22" fill="#fff">US</text>
+          </svg>
+          <span className="text-[10px] text-steel-300">®</span>
+        </div>
         <div className="hidden flex-1 lg:block">
           <SearchBar />
         </div>
