@@ -18,6 +18,18 @@ import frontOffice from "@/assets/front-office.jpg";
 import paintRoom from "@/assets/paint-room.jpg";
 import newBay from "@/assets/new-bay.jpg";
 import heritage from "@/assets/heritage.jpg";
+import imgKeyTags from "@/assets/products/key-tags.jpg";
+import imgLift from "@/assets/products/two-post-lift.jpg";
+import imgFloorMats from "@/assets/products/floor-mats.jpg";
+import imgPaintMarkers from "@/assets/products/paint-markers.jpg";
+import imgRoMarkers from "@/assets/products/ro-markers.jpg";
+import imgAirAmp from "@/assets/products/air-amplifier.jpg";
+import imgMaskingTape from "@/assets/products/masking-tape.jpg";
+import imgSprayGun from "@/assets/products/spray-gun.jpg";
+import imgPaintBoothProd from "@/assets/products/paint-booth.jpg";
+import imgIndMarkers from "@/assets/products/industrial-markers.jpg";
+import imgDetailWand from "@/assets/products/detail-wand.jpg";
+import imgBodyFiller from "@/assets/products/body-filler.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
